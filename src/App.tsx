@@ -1,7 +1,10 @@
+import {Navbar} from './components/Navbar';
+import "./index.css";
+
 export function App() {
   return (
     <>
-      <h1>This is the App component</h1>
+    <Navbar/>
     </>
   );
 }

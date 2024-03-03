@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Red Hat Display", sans-serif;
+}
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+@media (prefers-color-scheme: dark) {
+
+    *{
+        background-color: #222; 
+        color: #ddd; 
+    }
+
+    nav .nav-item .Github{   
+        background-image: url("./assets/github-darkmode.png");
+    }
+
+    nav .nav-item .LinkedIn{
+        background-image: url("./assets/linkedin-darkmode.svg");
+    }
+  
+  }

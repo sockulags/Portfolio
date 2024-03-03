@@ -1,0 +1,56 @@
+nav{
+    display: flex;
+    justify-content: center;
+    margin: 0.5rem;
+    gap: 1rem;
+    .nav-item{
+        display: flex;
+        height:3rem;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+       
+    
+        a{
+            display:flex;
+            column-gap: 8px;
+            justify-content: center;
+            align-items: center;
+            font-weight: 600;
+            text-decoration: none;
+            height: 30px;
+            font-size: 18px;        
+        }
+        a:visited{
+        color: inherit;        
+      }
+      a:hover {
+        border-bottom: 2px solid;
+    }
+   
+      .Github{
+        position: relative;
+        bottom: 3px;
+        height: 21px;
+        width: 21px;
+        background-image: url("../assets/github-lightmode.svg");
+        background-size: cover;  
+        margin-right: 2px;      
+    }
+    .LinkedIn{
+       
+        position: relative;
+        bottom: 2px;
+        height: 27px;
+        width: 27px;       
+        background-image: url("../assets/linkedin-lightmode.svg");
+        background-size: cover;    
+    }
+
+    a:has(.LinkedIn) {
+        margin-left: 40px;
+    }
+    }
+
+}
+
