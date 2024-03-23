@@ -2,15 +2,94 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Red Hat Display", sans-serif;
+    font-family: "Poppins", sans-serif;
 }
-@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+.info{
+    font-size: 40px;
+    margin: 200px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body{
+    background: -webkit-linear-gradient(to right, #232526, #414345); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #232526, #414345);
+}
+/* BUTTONS */ 
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+button {
+    font-weight: 600;
+    transition:  all 300ms ease;
+    padding: 1rem;
+    width: 8rem;
+    border-radius: 2rem;
+}
+
+.btn-color-1, .btn-color-2{
+    border: none;
+  box-shadow: rgba(255, 255, 255, 0.15) 0 1px 0 inset,rgba(197, 200, 212, 0.075) 0 1px 1px;
+
+}
+
+.btn-color-1:hover, .btn-color-2:hover{
+    cursor: pointer;
+}
+
+.btn-color-1{
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+.btn-color-1:hover,.btn-color-2:hover{
+ background: rgb(48, 48, 48);
+ color: white;
+}
+
+.btn-color-2{
+background: white;
+color: rgb(24, 24, 24);
+font-weight: 600;
+font-size: 16px;
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 6px;
+}
+
+span{
+    color: inherit;
+    background-color: inherit;
+    font-size: inherit;
+}
+
+.btn-color-2:hover{
+    /* border: rgb(255,255,255) 0.1rem solid;  */
+}
+
+.btn-container {
+    gap: 1rem;
+}
+a, .btn {
+    transition: all 300ms ease;
+}
 
 @media (prefers-color-scheme: dark) {
 
     *{
-        background-color: #222; 
-        color: #ddd; 
+        color: #ffffff; 
+    }
+
+    body{
+  background: linear-gradient(to right, #232526, #414345);
+
     }
 
     nav .nav-item .Github{   
@@ -22,3 +101,4 @@
     }
   
   }
+

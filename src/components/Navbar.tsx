@@ -27,7 +27,6 @@ export function Navbar() {
             return (
               <div key={nav.id} className="nav-item">
                 <a href={nav.path} target="_blank">
-                  {" "}
                   <div className={nav.name}></div>
                   {nav.name}
                 </a>

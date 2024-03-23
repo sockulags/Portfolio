@@ -62,12 +62,13 @@ nav {
     font-size: 24px;
     border: none;
     cursor: pointer;
-  }
-
-  .hamburger-icon {
     position: relative;
     left: calc(100vw - 60px);
     top: 30px;
+    background-color: transparent;
+  }
+
+  .hamburger-icon {
     display: flex;
     flex-direction: column;
     justify-content: space-between;

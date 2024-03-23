@@ -1,0 +1,96 @@
+#profile {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    height: 70vh;
+    align-items: center;
+}
+
+.profille-picture{   
+    border: 2px solid #333;
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+   border-radius: 50%;
+   animation: spin 30s reverse linear infinite;
+}
+
+.section__text{
+    align-self: center;  
+}
+
+.section__text p{
+    font-weight: 600; 
+    text-align: center;
+}
+
+.section__text__p1 {    
+    font-size: 20px;
+}
+.section__text__p2 {
+       font-size: 24px;
+   
+    margin-bottom: 1rem;
+}
+
+.title {
+    font-size: 3rem;
+   
+}
+
+#socials {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+
+
+.spinner {
+    width: 300px;
+    height: 300px;
+    font-size: 30px;
+    color: #fff;
+    background: none;
+    border: none;
+    border-radius: 50%;
+    position: relative;
+    z-index: 0;
+    animation: spin 30s linear infinite; /* Applying animation */
+}
+
+.spinner:before {
+    content: "";
+    position: absolute;
+    inset: -8px;
+    border-radius: 50%;
+    background: conic-gradient(
+        #a0a0a0,
+        #0000 30deg 120deg,
+        #a0a0a0 150deg 180deg,
+        #0000 210deg 300deg,
+        #a0a0a0 330deg
+    );
+}
+
+.spinner:before {
+    background-color: #222;
+    border: 2px solid #333;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.spinner>img {
+    border-radius: 50%;
+    left: 0px;
+    position: relative;
+    top: 0px;
+    opacity: 0.9;
+}
