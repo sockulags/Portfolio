@@ -7,7 +7,7 @@ export function Navbar() {
 
   return (
     <>
-      <button
+      <div
         className="hamburger-button"
         onClick={() => setIExpanded(!isExpanded)}
       >
@@ -20,7 +20,7 @@ export function Navbar() {
           <span></span>
           <span></span>
         </div>
-      </button>
+      </div>
       <nav className={isExpanded ? "" : "hidden"}>
         {navigationPaths.map((nav) => {
           if (nav.name === "LinkedIn" || nav.name === "Github") {

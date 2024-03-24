@@ -56,6 +56,7 @@
     border-radius: 50%;
     position: relative;
     z-index: 0;
+    /* overflow: hidden; */
     animation: spin 30s linear infinite; /* Applying animation */
 }
 
@@ -71,11 +72,13 @@
         #0000 210deg 300deg,
         #a0a0a0 330deg
     );
+    overflow: hidden;
 }
 
 .spinner:before {
     background-color: #222;
     border: 2px solid #333;
+    overflow:hidden;
 }
 
 @keyframes spin {
@@ -93,4 +96,17 @@
     position: relative;
     top: 0px;
     opacity: 0.9;
+}
+
+@media screen and (max-width: 768px){
+    #profile{
+        flex-direction: column;
+        margin-top: 80px;
+        gap: 3rem;
+    }
+
+    .spinner{
+        width: 250px;
+    height: 250px;
+    }
 }
